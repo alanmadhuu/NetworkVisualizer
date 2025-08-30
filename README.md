@@ -27,7 +27,7 @@
    - [Download Nmap](https://nmap.org/download.html)  
 
 2. Run a network scan and save results as JSON:  
-   ```bash
+
 
 🛠️ Tech Stack
 
