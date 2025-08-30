@@ -32,13 +32,10 @@
 🛠️ Tech Stack
 
 Nmap → Network scanning
-
 JSON → Device data storage
-<img width="1437" height="962" alt="image" src="https://github.com/user-attachments/assets/6cde1fe8-0df7-4ac4-9e7a-2883c65e1402" />
-
-
 D3.js → Data visualization
-
 HTML/CSS/JS → Frontend
+  ```bash
    nmap -O -sV -sn 192.168.1.0/24 -oX scan.xml
    xsltproc scan.xml -o topology.json
+<img width="1495" height="988" alt="image" src="https://github.com/user-attachments/assets/393f913a-cbe5-4840-a844-77fb551330ff" />
