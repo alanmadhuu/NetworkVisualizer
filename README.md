@@ -14,10 +14,9 @@
 ---
 
 ## 📂 Project Structure  
-.
-├── topology.json # Auto-generated network data from Nmap
-├── front.html # Visualization frontend (D3.js)
-├── README.md # Project documentation
+- topology.json # Auto-generated network data from Nmap
+- front.html # Visualization frontend (D3.js)
+- README.md # Project documentation
 
 
 ---
