@@ -1,0 +1,75 @@
+{
+  "nodes": [
+    {
+      "id": "192.168.1.1",
+      "type": "router"
+    },
+    {
+      "id": "192.168.1.1",
+      "type": "router",
+      "mac": "90:67:17:26:02:EB"
+    },
+    {
+      "id": "192.168.1.241",
+      "type": "host",
+      "mac": "3C:6F:EA:02:7F:75",
+      "hostname": "192.168.1.241"
+    },
+    {
+      "id": "192.168.1.254",
+      "type": "host",
+      "mac": "C4:71:54:BE:60:D5",
+      "hostname": "192.168.1.254"
+    },
+    {
+      "id": "192.168.1.36",
+      "type": "host",
+      "mac": "56:5E:60:64:82:AB",
+      "hostname": "Helen-Madhu-s-S23-FE.bbrouter"
+    },
+    {
+      "id": "192.168.1.37",
+      "type": "host",
+      "mac": "4E:91:A5:C8:EE:82",
+      "hostname": "Galaxy-S20-FE-5G.bbrouter"
+    },
+    {
+      "id": "192.168.1.39",
+      "type": "host",
+      "mac": "Unknown",
+      "hostname": "LAPTOP-60CG5PGJ.bbrouter"
+    },
+    {
+      "id": "192.168.1.40",
+      "type": "host",
+      "mac": "E2:2F:B6:53:15:1E",
+      "hostname": "Madhu-s-S24-Ultra.bbrouter"
+    }
+  ],
+  "links": [
+    {
+      "source": "192.168.1.1",
+      "target": "192.168.1.241"
+    },
+    {
+      "source": "192.168.1.1",
+      "target": "192.168.1.254"
+    },
+    {
+      "source": "192.168.1.1",
+      "target": "192.168.1.36"
+    },
+    {
+      "source": "192.168.1.1",
+      "target": "192.168.1.37"
+    },
+    {
+      "source": "192.168.1.1",
+      "target": "192.168.1.39"
+    },
+    {
+      "source": "192.168.1.1",
+      "target": "192.168.1.40"
+    }
+  ]
+}
