@@ -1,84 +1,43 @@
-🛰️ Interactive Network Topology Map
+# 🌐 Network Topology Visualizer  
 
-An interactive visualization of devices in a local network, built with Nmap, JSON, and D3.js.
-This project scans your LAN, saves device data into a JSON file, and displays a dynamic network graph in the browser.
+> **Interactive visualization of your local network topology using Nmap + D3.js**  
 
-📌 Features
+---
 
-📡 Nmap-powered discovery – Scan devices in your local network.
+## ✨ Features  
+- 🔎 Scans your local network with **Nmap**  
+- 📂 Saves device details (IP, MAC, OS) in **JSON**  
+- 🎨 Renders an **interactive graph** using **D3.js**  
+- 🖱️ Hover on nodes to view detailed device info  
+- 📡 Differentiates between **routers (square)** and **hosts (circle)**  
 
-🗂️ JSON storage – Store device info (IP, MAC, OS, type).
+---
 
-🎨 Interactive D3.js graph – Routers (squares) and devices (circles).
+## 📂 Project Structure  
+.
+├── topology.json # Auto-generated network data from Nmap
+├── front.html # Visualization frontend (D3.js)
+├── README.md # Project documentation
 
-🧾 Tooltips – Hover over devices to see:
 
-Hostname / Name
+---
 
-IP address
+## 🚀 How to Run  
 
-MAC address
+1. Install **Nmap** on your system  
+   - [Download Nmap](https://nmap.org/download.html)  
 
-OS info
-
-Device type (router, host, etc.)
+2. Run a network scan and save results as JSON:  
+   ```bash
 
 🛠️ Tech Stack
 
-Nmap – Network scanning
+Nmap → Network scanning
 
-D3.js (v7) – Data-driven visualization
+JSON → Device data storage
 
-HTML / CSS / JavaScript – Frontend rendering
+D3.js → Data visualization
 
-🚀 Usage
-
-Scan your network with Nmap
-
-nmap -O -sV -sn 192.168.1.0/24 -oX scan.xml
-
-
-Or export to JSON using a parser:
-
-nmap -oG scan.txt 192.168.1.0/24
-
-
-Convert scan results to JSON
-Example structure (topology.json):
-
-{
-  "nodes": [
-    { "id": "192.168.1.1", "name": "Router", "mac": "90:67:17:26:02:EB", "os": "Unknown", "type": "router" },
-    { "id": "192.168.1.39", "name": "Laptop", "mac": "AA:BB:CC:DD:EE:FF", "os": "Windows 11", "type": "host" }
-  ],
-  "links": [
-    { "source": "192.168.1.1", "target": "192.168.1.39" }
-  ]
-}
-
-
-Open index.html in a browser
-
-The graph will render automatically from topology.json.
-
-Drag nodes, zoom in/out, and hover to see details.
-
-📸 Preview
-
-(Add a screenshot here of your network graph visualization)
-
-🔮 Future Improvements
-
-✅ Automatic JSON generation from Nmap output
-
-✅ OS detection refinement
-
-🌍 Support for external/public network topology mapping
-
-💾 Save graphs as PNG/SVG
-
-⚡ Credits
-
-Built with ❤️ using Nmap + D3.js
-
-Inspired by real-world network topology visualization
+HTML/CSS/JS → Frontend
+   nmap -O -sV -sn 192.168.1.0/24 -oX scan.xml
+   xsltproc scan.xml -o topology.json
