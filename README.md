@@ -38,4 +38,5 @@ HTML/CSS/JS → Frontend
   ```bash
    nmap -O -sV -sn 192.168.1.0/24 -oX scan.xml
    xsltproc scan.xml -o topology.json
+```
 <img width="1495" height="988" alt="image" src="https://github.com/user-attachments/assets/393f913a-cbe5-4840-a844-77fb551330ff" />
